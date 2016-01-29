@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Push Demo</title>
+
+  <link rel="manifest" href="manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+    var OneSignal = OneSignal || [];
+    OneSignal.LOGGING = true;
+    OneSignal.push(["init", {
+      appId: "xxxxxxxxx",
+      safari_web_id: "xxxxxxxxxx",
+      autoRegister: false,
+      notifyButton: {
+        enable: true
+      }
+    }]);
+  </script>
+</head>
+
+<body>
+
+  <h1>Push Demo</h1>
+
+  <p>This page must be accessed using HTTPS or via localhost.</p>
+<!--
+  <button disabled>Subscribe</button>
+
+  <script src="js/main.js"></script>
+-->
+</body>
+</html>
