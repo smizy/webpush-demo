@@ -2,9 +2,10 @@ application: push-demo
 version: 1
 runtime: php55
 api_version: 1
-instance_class: B1
-manual_scaling:
-  instances: 1
+instance_class: f1
+automatic_scaling:
+  min_idle_instances: 1
+  max_idle_instances: 1
   
 handlers:
 - url: /$
@@ -18,3 +19,4 @@ handlers:
 skip_files:
 - ^(.*/)?\.md$
 - ^app.yaml$
+- ^.git
